@@ -1,10 +1,9 @@
-/**/
 body {
 	background-color:white;
 	height:100%;
 	width: 100%;
 }
-#main {
+#main {	
 	margin: 115px 0 auto;
 }
 /*HEADER*/
@@ -166,33 +165,6 @@ header{
 	border:none;
 }
 
-/* Modal Registro */
-
-.container-Registro {
-	width:50%;
-}
-.container-Registro form > div >span  {
-	margin-right: 10%;
-	margin-left: 10%;
-	color: white
-
-}
-.container-Registro #userLastname {
-	margin-left: 20%;
-}
-.container-Registro #textRegister {
-	margin-left: 8%;
-}
-#usertxt{
-	margin-left:9%;
-}
-.container-Registro form> div> input {
-	width:35%;
-	border-radius: 5px;
-	border-style:solid;
-	border-color:gray;
-	background-color:white;
-}
 /* CARTELERA */
 
 .cartelera-contenedor {
@@ -308,7 +280,7 @@ header{
 	bottom: -8px;
 	left: 50%;
 	margin-left: -8px;
-}
+}	
 .fecha-seleccion {
 	background-color:#0066Ad;
 	padding: 2% 1% 12% 3%;
@@ -343,6 +315,7 @@ header{
  	display: inline-block;
  	padding-left:3%;
  	white-space: nowrap;
+
 }
 .seleccion-hora a:hover {
 	color:#0066Ad;
@@ -354,5 +327,101 @@ header{
 	font-size: 12px;
 	color: #343434;
 	font-weight: bold;
+
+}
+.info-pelicula-contenedor {
+	margin:7% 10% 10% 10%;
+	background-color: #dad7d7;
+	position: relative;
+	width:60%;
+}
+.info-pelicula-contenedor::before {
+	border-bottom: 12px solid #dad7d7;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	content: "";
+	top:-12px;
+	left: 250px;
+	position: absolute;
+}
+.info-pelicula-opciones li {
+	display: inline-block;
+	font-size: 30px;
+	padding: 3% 10% 0 10%;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: gray;
+}
+.info-pelicula-contenido{
+	padding: 3% 0 5% 6%;
+
+}
+.info-pelicula-opciones li i{
+	font-size:20px;
+	color: #343434!important;
+	background-color:#0066Ad;
+	padding: 5px 5px 5px 10px;
+	border-radius: 15px;
+}
+.info-pelicula-contenido p {
+	color:#343434;
+}
+.info-pelicula-opciones{
+	color:#343434!important;
+}
+.info-pelicula-opciones-select{
+	color:#0066Ad!important;	
+}
+.info-pelicula-enlaces{
+	border-bottom-color: gray;
+}
+.info-pelicula-enlaces-select{
+	border-bottom-color:#0066Ad!important;	
+}
+.info-pelicula-detalles-select {
+	display:block;
+}
+.info-pelicula-detalles {
+	display: none;;
+
+}
+/* PAGINA PARA COMPRAR BOLETOS´*/
+
+
+.compra-detalle {
+	width: 25%;
+	display: inline-block;
+	margin: 2% 0 0 5%;
+}
+.compra-detalle-lbl span{
+	background-color:#0066Ad;
+	padding: 2% 15% 2% 15%;
+	border-radius: 5px;
+	color: white;
+	border-bottom-style:solid;
+	border-bottom-width: 3px;
+	border-bottom-color:#024676;
+
+}
+.compra-detalle-img {
+	margin: 7% 0 5% 3%;
+
+}
+.compra-detalle-img img{
+	height: 300px;
+}
+.compra-detalle-info ul{
+	padding:0;
+}
+.compra-detalle-info li {
+	list-style-type:none;
+	color: #343434;
+}
+.compra-detalle-info li strong {
+	color: #0066Ad;
 }
 
+.compra-proceso {
+	background-color:red;
+	position: absolute;
+}

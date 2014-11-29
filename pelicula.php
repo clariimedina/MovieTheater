@@ -36,7 +36,7 @@
 			</div>
 			<div class="seleccion-hora">
 				<ul id="lista"> 
-					<li><a href="" title="comprar boletos">11:00 AM</a></li>
+					<li><a href="compraBoletos.php" title="comprar boletos">11:00 AM</a></li>
 					<li><a href="" >11:45 AM</a></li>
 					<li><a href="">12:45 PM</a></li>
 					<li><a href="">1:35 PM</a></li>
@@ -73,7 +73,21 @@
 			</div>
 		</div>
 	</div>
+	<div class="info-pelicula-contenedor">
+		<div class="info-pelicula-opciones">
+			<ul>
+				<li id="trailer-link" class="info-pelicula-enlaces-select"><a id="trailer" class="info-pelicula-opciones-select"><i class="fa fa-play" style="margin-right:10px;"></i>Trailer</a></li>
+				<li id="sipnosis-link" class="info-pelicula-enlaces"><a id="sipnosis" class="info-pelicula-opciones"><i class="fa fa-align-left"></i> Sipnosis</a></li>
+			</ul>
+		</div>
+		<div class="info-pelicula-contenido">
+			<div class="info-pelicula-detalles-select" id="contenido-trailer">						
+				<iframe width="700" height="400" src="http://www.youtube.com/embed/ryd-GcG6Hkk"></iframe>
+			</div>
+			<div class="info-pelicula-detalles" id="contenido-sipnosis">
+				<p>Los juegos del hambre: Sinsajo Parte 1 en la que Katniss Everdeen se encuentra en el Distrito 13 después de destrozar literalmente los Juegos para siempre. Bajo el liderazgo de la Presidente Coin y el consejo de sus amigos más leales, Katniss extiende sus alas mientras lucha por salvar a Peeta Mellark y a una nación alentada por su valentía.</p>
+			</div>
+		</div>
+	</div>
 </div>
-<script type="text/javascript">
-$('#lista li').tooltip();
-</script>
+<?php include("footer.php"); ?>

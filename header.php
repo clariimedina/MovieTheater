@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js" ></script>
 		<script type="text/javascript" src="js/funcionFancyBox.js"></script>
+		<script type="text/javascript" src="js/seleccionado.js"></script>
 		
 
 	</head>
@@ -27,7 +28,7 @@
 						<li>
 							<select id="ciudad" class="form-control">
 								<option >Selecciona tu ciudad</option>
-								<option value="Culiacan">Culiacán</option>
+								<option value="Culiacán">Culiacán</option>
 								<option value="Navolato">Navolato</option>
 								<option value="Mochis">Los Mochis</option>
 								<option value="DF">DF</option>
@@ -43,14 +44,7 @@
 								<span class="header-properties-button-user ">
 									<i class="fa fa-user"></i>
 								</span>
-								<strong class="header-properties-user-strong">Iniciar Seción</strong>
-							</button></li>
-						<li id="header-button-user">
-							<button  data-toggle="modal" data-target="#modalRegistro">
-								<span class="header-properties-button-user ">
-									<i class="fa fa-pencil"></i>
-								</span>
-								<strong class="header-properties-user-strong">Registrarse</strong>
+								<strong class="header-properties-user-strong">Paga reservación</strong>
 							</button>
 						</li>
 					</ul>
@@ -94,51 +88,6 @@
 				</div><!-- /.modal-dialog -->
 			</div><!-- /.modal -->
 		</section>
-		<!-- termina modal -->
-		<section>
-			<div class="modal fade" id="modalRegistro">
-				<div class="modal-dialog container-Registro">
-					<div class="modal-content modal-properties">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						    <h4 class="modal-title"><span class="modal-properties-letter"> Ingresa tus datos </span></h4>
-						</div>
-						<div class="modal-body modal-body-properties">
-							<form>
-								<div class="row">
-									<span>Nombre</span>
-									<span id="userLastname">Apellidos</span>
-								</div>
-								<div class="row" id="textRegister">
-									<input type="text" name="emailUser">
-						        	<input  id="usertxt" type="text" name="passUser">
-								</div>
-
-								<div class="row">
-									<span>Tajerta Cliente (opcional)</span>
-									<span>Contraseña</span>
-								</div>
-								<div class="row" id="textRegister">
-									<input type="text" name="emailUser">
-						        	<input  id="usertxt" type="text" name="passUser">
-								</div>
-
-								<div class="row">
-									<span>Correo Electronico</span>
-								</div>
-								<div class="row" id="textRegister">
-						        	<input  type="text" name="passUser">
-								</div>
-
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<script type="text/javascript">
 			function getParameterByName(name) {
@@ -151,7 +100,7 @@
 			$(document).ready(function() {
 				$('#header-button-cartelera').click(function() {
 					var ciudad = $('#ciudad option:selected').attr('value');
-					window.location.href = "http://localhost/cineFront/cartelera.php?ciudad="+ciudad;
+					window.location.href = "http://localhost/MovieTheater/cartelera.php?ciudad="+ciudad;
 				});
 			});
 		</script>
