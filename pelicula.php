@@ -36,7 +36,7 @@
 			</div>
 			<div class="seleccion-hora">
 				<ul id="lista"> 
-					<li><a href="compraBoletos.php" title="comprar boletos">11:00 AM</a></li>
+					<li><a href="compraBoletos.php?horario=11:00&pelicula=sinsajo&numSala=1&tipoSala=digitalEspañol" title="comprar boletos">11:00 AM</a></li>
 					<li><a href="" >11:45 AM</a></li>
 					<li><a href="">12:45 PM</a></li>
 					<li><a href="">1:35 PM</a></li>
