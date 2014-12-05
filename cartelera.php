@@ -1,4 +1,4 @@
--<?php include("header.php"); ?>
+<?php include("header.php"); ?>
 <div id="main">
 	<div class="cartelera-contenedor">
 
@@ -12,7 +12,7 @@
 $(document).ready(function(response) {
 	var c = getParameterByName('ciudad');
     $.ajax({
-            url: "http://localhost/cineBack/index.php/api/Ciudad?ciudad="+c, // URL del recurso
+            url: "http://localhost:8080/cineBack/index.php/api/Ciudad?ciudad="+c, // URL del recurso
             type: "GET",         
             dataType: "json",
             success: function(response) {

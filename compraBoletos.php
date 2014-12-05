@@ -1,4 +1,4 @@
- d<?php include("header.php"); ?>
+ <?php include("header.php"); ?>
 <div id="main">
 	<div class="compra-detalle">
 		<div class="compra-detalle-lbl">
