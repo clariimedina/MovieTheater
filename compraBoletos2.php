@@ -27,7 +27,7 @@
 					<li><strong>3</strong><span>Detalles de pago</span></li>
 				</ul>
 			</div>
-			<div class="compra-proceso-seleccionBoletos" id="contenido">
+			<div class="compra-proceso-seleccionBoletos">
 				<span><h4>1. Seleccion Boletos</h4></span>
 				<div class="compra-proceso-infoBoletos">
 					<span>Seleccione el numero de boletos</span>
@@ -36,7 +36,7 @@
 					<input type="number" value="1" max="50" min="1" placeholder="1" id="numBoletos" >
 					<output name=“cociente” for="dividendo divisor">
 				</div>
-				<div class="compra-proceso-tipoProceso">
+				<div class="compra-proceso-tipoProceso" >
 					<input type="radio" name="tipoVenta" value="Compra" checked>Compra
 					<input type="radio" name="tipoVenta" value="Reserva">Reserva
 					<button type="button" id="btnSiguiente">Siguiente</button>
@@ -57,17 +57,17 @@ $(document).ready(function(){
 	$("#btnSiguiente").click(function(){
 			var numBoletos = $("#numBoletos").val();
 			var tipoVenta = $('input:radio[name=tipoVenta]:checked').val();
-			 $('#contenido').html(""); 
-             $("#contenido").css("display","none");
-          	$.ajax({
-				url:"http://localhost/cineBack/index.php/api/IniciaNuevaVenta?numBoletos="+numBoletos+"&horario="+horario+"&pelicula="+pelicula+"&numSala="+numSala+"&tipoSala="+tipoSala+"&tipoVenta="+tipoVenta,
+			$.ajax({
+				url:"localhost://cineBack/index.php/api/iniciaNuevaVenta?numBoletos="+numBoletos+"&horario="+horario+"&pelicula="+pelicula+"&numSala="+numSala+"&tipoSala="+tipoSala+"&tipoVenta="+tipoVenta,
 				type:"POST",
 				dataType: "JSON",
-				success: function(response) {
-						
-					
+				success: function(response) {	
+					$('#contenid').html(""); 
+                	$("#contenido").css("display","none");
 				}
 			});
+
+			
 	});
 });
 
