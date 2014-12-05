@@ -1,16 +1,9 @@
-<<<<<<< HEAD
- <?php include("header.php"); ?>
+<?php include("header.php"); ?>
 <div id="main">
 	<div class="compra-detalle">
 		<div class="compra-detalle-lbl">
 			<span>Detalle compra</span>
-=======
-<?php include("header.php"); ?>
-	<div id="main">
-		<div class="compra-detalle">
-			<div class="compra-detalle-lbl">
-				<span>Detalle compra</span>
-			</div>
+		</div>
 			<div class="compra-detalle-img">
 				<img src="images/poster/poster1.jpg">
 			</div>
@@ -25,7 +18,6 @@
 					<li><strong>Sala: </strong>5</li>
 				</ul>
 			</div>
->>>>>>> 4b4eac061131aff8d088eea558ff5596a9babcf4
 		</div>
 		<div class="compra-proceso" style="display:inline-block">
 			<div class="compra-proceso-instrucciones">
