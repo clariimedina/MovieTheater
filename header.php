@@ -16,8 +16,6 @@
 		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js" ></script>
 		<script type="text/javascript" src="js/funcionFancyBox.js"></script>
 		<script type="text/javascript" src="js/seleccionado.js"></script>
-		
-
 	</head>
 	<body>
 		<header>
@@ -77,8 +75,6 @@
 						<div class="modal-body modal-body-properties">
 							<form class="modal-form">
 						        <div><input type="text" placeholder=" Correo Electronico" name="emailUser"></div>
-						        <input type="password" placeholder=" contraseña" name="passUser">
-					          
 							</form>
 						</div>
 						<div class="modal-footer">
