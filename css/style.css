@@ -6,7 +6,6 @@ body {
 	margin: 115px 0 auto;
 	position: relative;
 	height: 90%;
-
 }
 /*HEADER*/
 header{
@@ -129,7 +128,7 @@ header{
 
 .carrousel-container img {
 	width: 100%;
-	height:530px !important;
+	height: 500px !important;
 	margin-top: 2%;
 }
 
