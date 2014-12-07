@@ -18,25 +18,22 @@ $(document).ready(function(response) {
             success: function(response) {
                 var codigo='';
                 if (response.success == true) {
-                    $.each(response.complejos, function(index, complejos) { // function(Index,ganado)
-
-                    	codigo+="<div class=\"cartelera-info\">";
-						codigo+="<div class=\"cartelera-icono\">";
-						codigo+="<i class=\"fa fa-map-marker\"></i>";
-						codigo+="</div>";
-						codigo+="<h4>"+complejos.nombre+"</h4>";
-						codigo+="</div>";
-						codigo+="<div class=\"cartelera-peliculas\">";
-						codigo+="<ul id=\"PeliculasporComplejo\">";
-                    		$.each(complejos.peliculas, function(index,peliculas) { // function(Index,ganado)
-
-								codigo+="<li><a id="+peliculas.id_pelicula+" href=\"peliculaInfo.php?id_pelicula="+peliculas.id_pelicula+"\"><img src=\"images/poster/"+peliculas.poster+"\"></a><br><center>"+peliculas.titulo+"</center></li>";
-                		
-                  			   });
+                    $.each(response.complejos, function(index,complejos) { // function(Index,ganado)
+                    	  codigo+="<div class=\"cartelera-info\">";
+            						codigo+="<div class=\"cartelera-icono\">";
+            						codigo+="<i class=\"fa fa-map-marker\"></i>";
+            						codigo+="</div>";
+            						codigo+="<h4>"+complejos.nombre+"</h4>";
+            						codigo+="</div>";
+            						codigo+="<div class=\"cartelera-peliculas\">";
+            						codigo+="<ul id=\"PeliculasporComplejo\">";
+                    		$.each(complejos.salaComplejos, function(index,salaComplejos) { // function(Index,ganado)
+                            var id_sala = salaComplejos.id_sala;
+                              codigo+="<li><a id="+salaComplejos.peliculas.id_pelicula+" href=\"peliculaInfo.php?id_pelicula="+salaComplejos.peliculas.id_pelicula+"&numSala="+id_sala+"\"><img src=\"images/poster/"+salaComplejos.peliculas.poster+"\"></a><br><center>"+salaComplejos.peliculas.titulo+"</center></li>";  
+                  			});
                     			$('#PeliculasporComplejo').html(codigo); 
-					codigo+="</ul>"; 
-					codigo+="</div>";
-                    		
+                					codigo+="</ul>"; 
+                					codigo+="</div>";                    	
                    });
                     $('#contenido').html(codigo);
                 }

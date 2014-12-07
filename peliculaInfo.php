@@ -106,7 +106,6 @@ $(document).ready(function(){
                        codigo+="</div>";
                        codigo+="</div>";
                        codigo+="</div>";
-                       codigo+="</div>";
                     $('#main').html(codigo);
                }
             }   
