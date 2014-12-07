@@ -170,7 +170,7 @@ header{
 .cartelera-contenedor {
 	margin-left: 8%;
 	margin-top:12%;	
-	width: 90%;
+	width: 80%;
 }
 .cartelera{
 
@@ -180,7 +180,7 @@ header{
 .cartelera-info {
 	background-color:#0066Ad;
 	margin-left: 5%;
-	width: 80%;
+	width: 100%;
 	border-radius: 10px;
 
 }
@@ -332,7 +332,8 @@ header{
 .info-pelicula-contenedor {
 	margin:7% 10% 10% 10%;
 	background-color: #dad7d7;
-	position: relative;
+	position:relative;
+	display: inline-block;
 	width:60%;
 }
 .info-pelicula-contenedor::before {
