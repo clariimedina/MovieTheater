@@ -15,7 +15,8 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js" ></script>
 		<script type="text/javascript" src="js/funcionFancyBox.js"></script>
-		<script type="text/javascript" src="js/seleccionado.js"></script>
+		<script type="text/javascript" src="js/validaNumeros.js"></script>
+		
 	</head>
 	<body>
 		<header>
@@ -57,8 +58,8 @@
 					<li><a href="3d.php">3D</a></li>
 					<li><a href="moviextremo.php">MovieXtremo</a></li>
 					<li><a href="invitadoespecial.php">Invitado Especial</a></li>
-					<li><a href="buzontheater.php">Buzón Theater</a></li>
-					<li><a href="">Nosotros</a></li>
+					<li><a href="buzon.php">Buzón Theater</a></li>
+					<li><a href="nosotros.php">Nosotros</a></li>
 				</ul>
 			</div>
 		</header>
@@ -70,15 +71,15 @@
 					<div class="modal-content modal-properties">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						    <h4 class="modal-title"><span class="modal-properties-letter"> Ingresa tus datos </span></h4>
+						    <h7 class="modal-title"><span class="modal-properties-letter">Ingrese su clave de reserva</span></h7>
 						</div>
 						<div class="modal-body modal-body-properties">
 							<form class="modal-form">
-						        <div><input type="text" placeholder=" Correo Electronico" name="emailUser"></div>
+						        <div><input type="text" name="emailUser"></div>
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+							<button type="button" class="btn btn-primary btn-reserve" data-dismiss="modal">Aceptar</button>
 						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
@@ -96,7 +97,7 @@
 			$(document).ready(function() {
 				$('#header-button-cartelera').click(function() {
 					var ciudad = $('#ciudad option:selected').attr('value');
-					window.location.href = "http://localhost:8080/MovieTheater/cartelera.php?ciudad="+ciudad;
+					window.location.href = "http://localhost/MovieTheater/cartelera.php?ciudad="+ciudad;
 				});
 			});
 		</script>

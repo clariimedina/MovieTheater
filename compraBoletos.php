@@ -22,20 +22,24 @@
 	<div class="compra-proceso">
 		<div class="compra-proceso-instrucciones">
 			<ul>
-				<li><strong>1</strong><span>Seleccionar boletos</span></li>
+				<li><strong>1</strong><span> Seleccionar boletos</span></li>
 				<li><strong>2</strong><span> Seleccion de asientos</span></li>
-				<li><strong>3</strong><span>Detalles de pago</span></li>
-				<li><strong>4</strong><span>Boletos</span></li>
+				<li><strong>3</strong><span> Detalles de pago</span></li>
+				<li><strong>4</strong><span> Boletos</span></li>
 			</ul>
 		</div>
 		<div class="compra-proceso-seleccionBoletos" id="contenido">
-			<span><h4>1. Seleccion Boletos</h4></span>
+			<span><h4>1. Selección Boletos</h4></span>
 			<div class="compra-proceso-infoBoletos">
 				<span>Seleccione el numero de boletos</span>
 			</div>
 			<div class="compra-proceso-numBoletos">
-				<input type="number" value="1" max="50" min="1" placeholder="1" id="numBoletos">
-				<output name="cociente" for="dividendo divisor">
+				<!--<input type="number" value="1" max="50" min="1" placeholder="1" id="numBoletos">
+				<output name="cociente" for="dividendo divisor">-->
+				<form oninput="precio.value=calcula()">
+					<input type="number" value="1" max="50" min="1" id="numBoletos"> 
+				  = $<output name="precio" for="numBoletos">
+				<form>
 			</div>
 			<div class="compra-proceso-tipoProceso">
 				<input type="radio" name="tipoVenta" value="Compra" checked>Compra
@@ -52,6 +56,9 @@ var contBoletos = 0;
 var boletosCompletos = false;
 var arrayId = [];
 var id_venta;
+var price = 50;
+var totalBoletos = 0;
+
 $(document).ready(function(){
 	var horario = getParameterByName('horario');
 	var pelicula = getParameterByName('pelicula');
@@ -68,7 +75,7 @@ $(document).ready(function(){
 		$('#contenido').html(""); 
         //$("#contenido").css("display","none");
       	$.ajax({
-			url:"http://localhost:8080/cineBack/index.php/api/IniciaNuevaVenta?numBoletos="+numBoletos+"&horario="+horario+"&pelicula="+pelicula+"&numSala="+numSala+"&tipoSala="+tipoSala+"&tipoVenta="+tipoVenta,
+			url:"http://localhost/cineBack/index.php/api/IniciaNuevaVenta?numBoletos="+numBoletos+"&horario="+horario+"&pelicula="+pelicula+"&numSala="+numSala+"&tipoSala="+tipoSala+"&tipoVenta="+tipoVenta,
 			type:"GET",
 			dataType: "JSON",
 			success: function(response) {
@@ -174,7 +181,13 @@ function nextStep() {
 				//window.location.href = "http://localhost:8080/MovieTheater/formVenta.php";
 			}
 		});
+		window.location.href = "http://localhost/MovieTheater/formVenta.php";
 	}
+}
+
+function calcula() {
+	totalBoletos = parseInt(50)*parseInt(numBoletos.value);
+	return totalBoletos;
 }
 
 </script>

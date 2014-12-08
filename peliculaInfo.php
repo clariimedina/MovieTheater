@@ -7,7 +7,6 @@ $(document).ready(function(){
      var id_pelicula = getParameterByName('id_pelicula');
      var numSala = getParameterByName('numSala');
      var id_sala = getParameterByName('id_sala');
-
      $.ajax({
            url: "http://localhost:8080/cineBack/index.php/api/Peliculas?id_pelicula="+id_sala+"&numSala="+numSala+"&id_sala="+id_sala, // URL del recurso
             type: "GET",         
@@ -66,27 +65,30 @@ $(document).ready(function(){
                        codigo+="<div class=\"info-pelicula-opciones\">";
                        codigo+="<ul>";
                        codigo+="<li id=\"trailer-link\" class=\"info-pelicula-enlaces-select\">";
-                       codigo+="<a id=\"trailer\" class=\"info-pelicula-opciones-select\">";
+                       codigo+="<a id=\"trailer\"  onClick=\"cambiaTrailer()\" class=\"info-pelicula-opciones-select\">";
                        codigo+="<i class=\"fa fa-play\" style=\"margin-right:10px;\"></i>Trailer";
                        codigo+="</a>";
                        codigo+="</li>";
                        codigo+="<li id=\"sipnosis-link\" class=\"info-pelicula-enlaces\">";
-                       codigo+="<a id=\"sipnosis\" class=\"info-pelicula-opciones\">";
+                       codigo+="<a id=\"sipnosis\" onClick=\"cambiaSipnosis()\" class=\"info-pelicula-opciones\">";
                        codigo+="<i class=\"fa fa-align-left\"></i> Sipnosis";
                        codigo+="</a>";
                        codigo+="</li>";
                        codigo+="</ul>";
                        codigo+="</div>";
                        codigo+="<div class=\"info-pelicula-contenido\">";
-                       codigo+="<div class=\"info-pelicula-detalles-select\" id=\"contenido-trailer\">";
+                       codigo+="<div id=\"contenido-trailer\">";
                        codigo+="<iframe width=\"700\" height=\"400\" src=\"http://www.youtube.com/embed/"+peliInfo.peliculas.trailer+"\"></iframe>";
-                       codigo+="<div class=\"info-pelicula-detalles\" id=\"contenido-sipnosis\">";
+                       codigo+="</div>";
+                       codigo+="<div id=\"contenido-sipnosis\">";
                        codigo+="<p>"+peliInfo.peliculas.sipnosis+"</p>";
+                       codigo+="</div>";
                        codigo+="</div>";
                        codigo+="</div>";
                        codigo+="</div>";
                       });
                     $('#main').html(codigo);
+                    $("#contenido-sipnosis").hide();
                }
             }   
      }); 
@@ -94,3 +96,38 @@ $(document).ready(function(){
 
 </script>
 <?php include('footer.php');?>
+<script type="text/javascript">
+ function cambiaTrailer() {
+   $("#contenido-trailer").toggle('fast');
+   $("#contenido-sipnosis").hide();
+
+    $("#trailer").addClass("info-pelicula-opciones-select");
+    $("#sipnosis").addClass("info-pelicula-opciones");
+    $("#sipnosis").removeClass("info-pelicula-opciones-select");
+    $("#trailer").removeClass("info-pelicula-opciones");
+
+    $("#trailer-link").addClass("info-pelicula-enlaces-select");
+    $("#sipnosis-link").addClass("info-pelicula-enlaces");
+    $("#sipnosis-link").removeClass("info-pelicula-enlaces-select");
+    $("#trailer-link").removeClass("info-pelicula-enlaces");
+  }
+
+   function cambiaSipnosis() {
+    $("#contenido-trailer").toggle('fast');
+    $("#contenido-sipnosis").show();
+
+    $("#sipnosis").addClass("info-pelicula-opciones-select");
+    $("#trailer").addClass("info-pelicula-opciones");
+    $("#trailer").removeClass("info-pelicula-opciones-select");
+    $("#sipnosis").removeClass("info-pelicula-opciones");
+
+    $("#sipnosis-link").addClass("info-pelicula-enlaces-select");
+    $("#trailer-link").addClass("info-pelicula-enlaces");
+    $("#trailer-link").removeClass("info-pelicula-enlaces-select");
+    $("#sipnosis-link").removeClass("info-pelicula-enlaces");
+  }
+
+
+</script>
+
+
