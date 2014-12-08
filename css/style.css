@@ -210,7 +210,7 @@ header{
 .cartelera-contenedor {
 	margin-left: 8%;
 	margin-top:12%;	
-	width: 90%;
+	width: 80%;
 }
 .cartelera{
 
@@ -220,7 +220,7 @@ header{
 .cartelera-info {
 	background-color:#0066Ad;
 	margin-left: 5%;
-	width: 80%;
+	width: 100%;
 	border-radius: 10px;
 
 }
@@ -297,6 +297,7 @@ header{
 	position: absolute;
 	padding-left: 3%;
 	width: 25%;
+	margin-top:50px;
 	background-color: white;
 }
 #horario-instruccion {
@@ -306,7 +307,7 @@ header{
 	width: 90%;
 	padding: 1% 1% 1% 4%;
 	border-radius: 5px;
-	margin-bottom: 28px;
+	margin-bottom: 50px;
 }
 #horario-instruccion span {
 	color: white;
@@ -323,9 +324,20 @@ header{
 }	
 .fecha-seleccion {
 	background-color:#0066Ad;
+	position: relative;
 	padding: 2% 1% 12% 3%;
 	border-radius: 5px;
-	width: 90%; 
+	width: 90%;  
+}
+.fecha-seleccion:after {
+	border-top: 8px solid #0066Ad;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
 }
 .fecha-seleccion span{
 	color: white;
@@ -370,9 +382,10 @@ header{
 
 }
 .info-pelicula-contenedor {
-	margin:7% 10% 10% 10%;
+	margin:120px 50px 50px 150px;
 	background-color: #dad7d7;
-	position: relative;
+	position:relative;
+	display: inline-block;
 	width:60%;
 }
 .info-pelicula-contenedor::before {
@@ -576,3 +589,194 @@ header{
 	outline: none !important;
 	box-shadow: 0px 0px 5px 0px #0066Ad;
 }
+
+/* PARTE DEL LUIS */
+
+/*Parte premium */
+#banner-container-premium {
+	width: 100%;
+}
+
+#banner-container-premium img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-premium {
+	width: 100%;
+}
+
+.img-premium {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+
+.img-premium img {
+	margin-left: 10%;
+	margin-top:-55%;
+	margin-bottom: 10%;
+}
+
+.info-premium {
+	display: inline-block;
+	width: 30%;
+}
+
+.info-premium p {
+	text-align: justify;
+	margin-top: 15%;
+}
+/*Parte 4d */
+#banner-container-4d {
+	width: 100%;
+}
+
+#banner-container-4d img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-4d {
+	width: 100%;
+}
+
+.img-4d {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+.img-4d-1 img {
+	margin-left: 10%;
+	margin-top:-87%;
+	margin-bottom: 10%;
+	width: 83%;
+
+}
+.img-4d-2 img{
+	margin-left: 10%;
+	margin-top:-20%;
+	margin-bottom: 10%;
+	width: 83%;
+
+}
+
+.info-4d {
+	display: inline-block;
+	width: 30%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.info-4d p {
+	text-align: justify;
+}
+
+/*Parte 3D */
+
+#banner-container-3d {
+	width: 100%;
+}
+
+#banner-container-3d img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-3d {
+	width: 100%;
+}
+
+.img-3d {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+
+.img-3d img {
+	margin-left: 10%;
+	margin-top:-42%;
+	margin-bottom: 10%;
+}
+
+.info-3d {
+	display: inline-block;
+	width: 30%;
+}
+
+.info-3d p {
+	text-align: justify;
+	margin-top: 15%;
+}
+/*parte invitado especial*/
+#banner-container-invitadoespecial {
+	width: 100%;
+}
+#banner-container-invitadoespecial img {
+	width: 100%;
+}
+.conteiner-invitadoespecial {
+	width: 100%;
+	height: 100%;
+}
+.intro-invitadoespecial h6 {
+	margin-top: 6%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+	color: #6E6E6E;
+}
+.tarjetas-invitadoespecial img {
+	margin-top: 3%;
+	width: 56%;
+
+}
+.text-invitadoespecial {
+	margin-top: 3%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+	color: #6E6E6E;
+}
+.puntos-invitadoespecial img {
+	margin-top: 3%;
+	width: 56%;
+	margin-bottom: 5%;
+
+}
+/*moviextremo*/
+#banner-container-moviextremo {
+	width: 100%;
+}
+
+#banner-container-moviextremo img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-moviextremo {
+	width: 100%;
+}
+
+.img-moviextremo {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+
+.img-moviextremo img {
+	margin-left: 10%;
+	margin-top:-55%;
+	margin-bottom: 10%;
+}
+
+.info-moviextremo {
+	display: inline-block;
+	width: 30%;
+}
+
+.info-moviextremo p {
+	text-align: justify;
+	margin-top: 15%;
+}
+

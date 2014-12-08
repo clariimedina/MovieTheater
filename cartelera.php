@@ -16,24 +16,23 @@ $(document).ready(function(response) {
             success: function(response) {
                 var codigo='';
                 if (response.success == true) {
-                    $.each(response.complejos, function(index, complejos) { // function(Index,ganado)
-
-                	codigo+="<div class=\"cartelera-info\">";
-            		codigo+="<div class=\"cartelera-icono\">";
-            		codigo+="<i class=\"fa fa-map-marker\"></i>";
-            		codigo+="</div>";
-            		codigo+="<h4>"+complejos.nombre+"</h4>";
-            		codigo+="</div>";
-            		codigo+="<div class=\"cartelera-peliculas\">";
-            		codigo+="<ul>";
-            		codigo+="<li><a id=\"1\" href=\"pelicula.php\"><img src=\"images/poster/poster1.jpg\"></a><br><center>Los juegos del hambre</center></li>";
-            		codigo+="<li><a id=\"2\"><img src=\"images/poster/poster2.jpg\"></a><br><center>Annabelle</center></li>";
-            		codigo+="<li><a id=\"3\"><img src=\"images/poster/poster3.png\"></a><br><center>Interestelar</center></li>";
-            		codigo+="<li><a id=\"4\"><img src=\"images/poster/poster4.jpg\"></a><br><center>Una pareja mas tonta</center></li>";
-            		codigo+="<li><a id=\"5\"><img src=\"images/poster/poster5.jpg\"></a><br><center>La dictadura perfecta</center></li>";
-            		codigo+="</ul>"; 
-            		codigo+="</div>";
-                    		
+                    $.each(response.complejos, function(index,complejos) { // function(Index,ganado)
+                    	  codigo+="<div class=\"cartelera-info\">";
+            						codigo+="<div class=\"cartelera-icono\">";
+            						codigo+="<i class=\"fa fa-map-marker\"></i>";
+            						codigo+="</div>";
+            						codigo+="<h4>"+complejos.nombre+"</h4>";
+            						codigo+="</div>";
+            						codigo+="<div class=\"cartelera-peliculas\">";
+            						codigo+="<ul id=\"PeliculasporComplejo\">";
+                    		$.each(complejos.salaComplejos, function(index,salaComplejos) { // function(Index,ganado)
+                            var numSala = salaComplejos.numSala;
+                            var id_sala = salaComplejos.id_sala;
+                              codigo+="<li><a id="+salaComplejos.peliculas.id_pelicula+" href=\"peliculaInfo.php?id_pelicula="+salaComplejos.peliculas.id_pelicula+"&numSala="+numSala+"&id_sala="+id_sala+"\"><img src=\"images/poster/"+salaComplejos.peliculas.poster+"\"></a><br><center>"+salaComplejos.peliculas.titulo+"</center></li>";  
+                  			});
+                    			$('#PeliculasporComplejo').html(codigo); 
+                					codigo+="</ul>"; 
+                					codigo+="</div>";                    	
                    });
                 $('#contenido').html(codigo);
                 }
@@ -43,4 +42,5 @@ $(document).ready(function(response) {
 });
 
 </script>
+
 <?php include("footer.php"); ?>
