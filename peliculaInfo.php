@@ -9,7 +9,7 @@ $(document).ready(function(){
      var id_sala = getParameterByName('id_sala');
 
      $.ajax({
-           url: "http://localhost/cineBack/index.php/api/Peliculas?id_pelicula="+id_sala+"&numSala="+numSala+"&id_sala="+id_sala, // URL del recurso
+           url: "http://localhost:8080/cineBack/index.php/api/Peliculas?id_pelicula="+id_sala+"&numSala="+numSala+"&id_sala="+id_sala, // URL del recurso
             type: "GET",         
             dataType: "json",
             success: function(response) {

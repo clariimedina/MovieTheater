@@ -51,7 +51,7 @@
 var contBoletos = 0;
 var boletosCompletos = false;
 var arrayId = [];
-
+var id_venta;
 $(document).ready(function(){
 	var horario = getParameterByName('horario');
 	var pelicula = getParameterByName('pelicula');
@@ -79,15 +79,16 @@ $(document).ready(function(){
 				var currentId;
 				if (response.success == true) {
 					codigo = "<div id=\"seating-container\">";
-                	$.each(response.venta.complejos, function(index, asiento) {
-                		currentId = response.venta.complejos[c].id_asiento;
+					console.log(response);
+                	$.each(response.venta.Salas, function(index, asiento) {
+                		currentId = response.venta.Salas[c].id_asiento;
                 		/*console.log(currentId); */
                 		cont++;
                 		if(cont == 11 || five == 1) {
                 			codigo+="<div class=\"empty-seating-item\">";
                 			codigo+="<i class=\"fa fa-user fa-5x icon\">";
                 			codigo+="</i></div>";
-                			if (response.venta.complejos[c] = "1")
+                			if (response.venta.Salas[c] = "1")
                 				codigo+="<div class=\"seating-item available\">";
                 			else
                 				codigo+="<div class=\"sold\">";
@@ -97,7 +98,7 @@ $(document).ready(function(){
                 			five=-1;
                 		}
                 		else {
-                			if (response.venta.complejos[c] = "1")
+                			if (response.venta.Salas[c] = "1")
                 				codigo+="<div class=\"seating-item available\">";
                 			else
                 				codigo+="<div class=\"sold\">";
@@ -109,8 +110,9 @@ $(document).ready(function(){
 					});
 					codigo+="</div>";
 					codigo+="<div id=\"button-sig-container\">";
-					codigo+="<button type=\"button\" id=\"btnSiguienteAsientos\" onclick=\"NextStep()\">Siguiente</button>";
+					codigo+="<button type=\"button\" id=\"btnSiguienteAsientos\" onclick=\"nextStep()\">Siguiente</button>";
 					codigo+="</div>"
+					id_venta = response.venta.id_venta;
                 $('#contenido').html(codigo);
             	}
 			}
@@ -153,10 +155,25 @@ function putColor(currentId, contBoletos) {
 	return contBoletos;
 }
 
-function NextStep() {
+function nextStep() {
 	console.log('Siguiente');
 	if(boletosCompletos){
-		window.location.href = "http://localhost:8080/MovieTheater/formVenta.php";
+		$.ajax({
+			url:"http://localhost:8080/cineBack/index.php/api/AsientosSeleccionados",
+			type:"POST",
+			dataType: "JSON",
+			data: {arrayId: arrayId, id_venta: id_venta},
+			success: function(response) {
+				if(response.success==true){
+					console.log(response);
+				}
+				else
+				{
+					
+				}
+				//window.location.href = "http://localhost:8080/MovieTheater/formVenta.php";
+			}
+		});
 	}
 }
 
