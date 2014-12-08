@@ -5,7 +5,6 @@ body {
 #main {	
 	margin: 115px 0 auto;
 	position: relative;
-	height: 90%;
 }
 /*HEADER*/
 header{
@@ -114,15 +113,45 @@ header{
 
 /*FOOTER*/
 #footer {
-	height: 20px;
+	background-color: #333;
+	height: 135px;
+}
+
+#footer-row {
+	width: 100%;
+	height: 95%;
+	background-color: pink;
+	padding: 10px 130px 0px 130px;
+}
+
+.footer-item{
+	display: inline;
+	width: 25%;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#footer ul li div {
+	display: inline;
+}
+
+.footer-item img {
+	width: 20%;
+	height: 100%;
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+	/*display: block;*/
 }
 
 /*CARROUSEL */
 
 .carrousel-container {
-	height: 100%;
+	height: 500px;
 	width: 100%;
-	top: -30px;
+	top: -27px;
 	position:relative;
 }
 
@@ -433,6 +462,7 @@ header{
 }
 
 .compra-proceso {
+	display: inline-block; 
 	position: absolute;
 	margin-top: 80px;
 	width: 67%;
@@ -447,7 +477,6 @@ header{
 
 .compra-proceso-seleccionBoletos {
 	margin-top: 50px;
-	margin-left:50px;
 	color: #0066Ad;
 }
 
@@ -475,4 +504,75 @@ header{
 .compra-proceso-tipoProceso {
 	margin-top: 80px;
 	margin-left:50%;
+}
+
+/*Asientos*/
+#seating-container {
+    width: 1000px;
+	height: 100%;
+	padding-bottom: 10px;
+	background-color: #F0F0F0;
+}
+
+.available { color: #8bc83c; }
+.sold { color: gray; }
+.selected { color: #0066Ad ; }
+
+.seating-item {
+    width: 9%;
+    height: 15%;
+    margin-top: 15px;
+    display: inline-block;
+    /*color: #0066Ad;*/
+    text-align: center;
+    -webkit-transition: All 1s;
+}
+
+.available:hover {
+    color: #398439;
+    -webkit-transform: scale(1.2,1.2);
+}
+
+.empty-seating-item {
+    width: 9%;
+    height: 15%;
+    margin-top: 15px;
+    display: inline-block;
+    color: transparent;
+    /*color: #F0F0F0;*/
+}
+
+#button-sig-container {
+    width: 1000px;
+    height: 70px;
+    text-align: right;
+    padding: 2% 2% 0% 0%;
+}
+
+#btnSiguienteAsientos {
+ 	background-color:#0066ad !important;
+	color: white !important;   
+}
+
+#form-venta-container {
+	background-color: transparent;
+	
+}
+
+#btnSiguiente {
+	margin: 2% 1% 1% 0%;	
+}
+
+#form-container input {
+	box-shadow: 0px 0px 2px 0px gray;
+	border:none;
+	margin-top: 25px;
+	-webkit-transition: All 0.5s;
+}
+
+
+#form-container input:focus {
+	border:none !important;
+	outline: none !important;
+	box-shadow: 0px 0px 5px 0px #0066Ad;
 }
