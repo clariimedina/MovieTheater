@@ -71,15 +71,15 @@
 					<div class="modal-content modal-properties">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						    <h4 class="modal-title"><span class="modal-properties-letter"> Ingresa tus datos </span></h4>
+						    <h7 class="modal-title"><span class="modal-properties-letter">Ingrese su clave de reserva</span></h7>
 						</div>
 						<div class="modal-body modal-body-properties">
 							<form class="modal-form">
-						        <div><input type="text" placeholder=" Correo Electronico" name="emailUser"></div>
+						        <div><input type="text" name="emailUser"></div>
 							</form>
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+							<button type="button" class="btn btn-primary btn-reserve" data-dismiss="modal">Aceptar</button>
 						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->

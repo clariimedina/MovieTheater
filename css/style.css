@@ -207,7 +207,6 @@ header{
 .modal-properties-letter{
 	color: white;
 	font-size:20px;
-	margin-left:17%;
 }
 .modal-header {
 	border:none;
@@ -242,6 +241,9 @@ header{
 	border:none;
 }
 
+.btn-reserve {
+	background-color: #0066ad !important;
+}
 /* CARTELERA */
 
 .cartelera-contenedor {
