@@ -478,3 +478,194 @@ header{
 	margin-top: 80px;
 	margin-left:50%;
 }
+
+
+/* PARTE DEL LUIS */
+
+/*Parte premium */
+#banner-container-premium {
+	width: 100%;
+}
+
+#banner-container-premium img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-premium {
+	width: 100%;
+}
+
+.img-premium {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+
+.img-premium img {
+	margin-left: 10%;
+	margin-top:-55%;
+	margin-bottom: 10%;
+}
+
+.info-premium {
+	display: inline-block;
+	width: 30%;
+}
+
+.info-premium p {
+	text-align: justify;
+	margin-top: 15%;
+}
+/*Parte 4d */
+#banner-container-4d {
+	width: 100%;
+}
+
+#banner-container-4d img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-4d {
+	width: 100%;
+}
+
+.img-4d {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+.img-4d-1 img {
+	margin-left: 10%;
+	margin-top:-87%;
+	margin-bottom: 10%;
+	width: 83%;
+
+}
+.img-4d-2 img{
+	margin-left: 10%;
+	margin-top:-20%;
+	margin-bottom: 10%;
+	width: 83%;
+
+}
+
+.info-4d {
+	display: inline-block;
+	width: 30%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.info-4d p {
+	text-align: justify;
+}
+
+/*Parte 3D */
+
+#banner-container-3d {
+	width: 100%;
+}
+
+#banner-container-3d img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-3d {
+	width: 100%;
+}
+
+.img-3d {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+
+.img-3d img {
+	margin-left: 10%;
+	margin-top:-42%;
+	margin-bottom: 10%;
+}
+
+.info-3d {
+	display: inline-block;
+	width: 30%;
+}
+
+.info-3d p {
+	text-align: justify;
+	margin-top: 15%;
+}
+/*parte invitado especial*/
+#banner-container-invitadoespecial {
+	width: 100%;
+}
+#banner-container-invitadoespecial img {
+	width: 100%;
+}
+.conteiner-invitadoespecial {
+	width: 100%;
+	height: 100%;
+}
+.intro-invitadoespecial h6 {
+	margin-top: 6%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+	color: #6E6E6E;
+}
+.tarjetas-invitadoespecial img {
+	margin-top: 3%;
+	width: 56%;
+
+}
+.text-invitadoespecial {
+	margin-top: 3%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: justify;
+	color: #6E6E6E;
+}
+.puntos-invitadoespecial img {
+	margin-top: 3%;
+	width: 56%;
+	margin-bottom: 5%;
+
+}
+/*moviextremo*/
+#banner-container-moviextremo {
+	width: 100%;
+}
+
+#banner-container-moviextremo img {
+	width: 100%;
+	height: 100%;
+}
+
+#content-container-moviextremo {
+	width: 100%;
+}
+
+.img-moviextremo {
+	display: inline-block;
+	height: 100%;
+	width:60%;
+}
+
+.img-moviextremo img {
+	margin-left: 10%;
+	margin-top:-55%;
+	margin-bottom: 10%;
+}
+
+.info-moviextremo {
+	display: inline-block;
+	width: 30%;
+}
+
+.info-moviextremo p {
+	text-align: justify;
+	margin-top: 15%;
+}

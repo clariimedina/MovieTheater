@@ -53,13 +53,13 @@
 			<div class="menu-properties">
 				<ul>
 					<li><a href="index.php"> Inicio</a></li>
-					<li><a href="">Cines</a></li>
-					<li><a href="">Premium</a></li>
-					<li><a href="">X4D</a></li>
-					<li><a href="">3D</a></li>
-					<li><a href="">Invitado Especial</a></li>
-					<li><a href="">Promos</a></li>
-					<li><a href="">Buzón Theater</a></li>
+					<li><a href="cines.php">Cines</a></li>
+					<li><a href="premium.php">Premium</a></li>
+					<li><a href="4d.php">X4D</a></li>
+					<li><a href="3d.php">3D</a></li>
+					<li><a href="moviextremo.php">MovieXtremo</a></li>
+					<li><a href="invitadoespecial.php">Invitado Especial</a></li>
+					<li><a href="buzontheater.php">Buzón Theater</a></li>
 					<li><a href="">Nosotros</a></li>
 				</ul>
 			</div>
