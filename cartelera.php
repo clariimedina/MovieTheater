@@ -1,9 +1,7 @@
 <?php include("header.php"); ?>
 <div id="main">
 	<div class="cartelera-contenedor">
-
 		<div class="cartelera" id="contenido">
-			
 		</div>
 	</div>
 </div>
@@ -12,7 +10,7 @@
 $(document).ready(function(response) {
 	var c = getParameterByName('ciudad');
     $.ajax({
-            url: "http://localhost/cineBack/index.php/api/Ciudad?ciudad="+c, // URL del recurso
+            url: "http://localhost:8080/cineBack/index.php/api/Ciudad?ciudad="+c, // URL del recurso
             type: "GET",         
             dataType: "json",
             success: function(response) {
@@ -36,11 +34,11 @@ $(document).ready(function(response) {
                 					codigo+="</ul>"; 
                 					codigo+="</div>";                    	
                    });
-                    $('#contenido').html(codigo);
+                $('#contenido').html(codigo);
                 }
-             }   
+            }   
 
-         });
+    });
 });
 
 </script>
