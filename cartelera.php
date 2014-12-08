@@ -28,8 +28,9 @@ $(document).ready(function(response) {
             						codigo+="<div class=\"cartelera-peliculas\">";
             						codigo+="<ul id=\"PeliculasporComplejo\">";
                     		$.each(complejos.salaComplejos, function(index,salaComplejos) { // function(Index,ganado)
+                            var numSala = salaComplejos.numSala;
                             var id_sala = salaComplejos.id_sala;
-                              codigo+="<li><a id="+salaComplejos.peliculas.id_pelicula+" href=\"peliculaInfo.php?id_pelicula="+salaComplejos.peliculas.id_pelicula+"&numSala="+id_sala+"\"><img src=\"images/poster/"+salaComplejos.peliculas.poster+"\"></a><br><center>"+salaComplejos.peliculas.titulo+"</center></li>";  
+                              codigo+="<li><a id="+salaComplejos.peliculas.id_pelicula+" href=\"peliculaInfo.php?id_pelicula="+salaComplejos.peliculas.id_pelicula+"&numSala="+numSala+"&id_sala="+id_sala+"\"><img src=\"images/poster/"+salaComplejos.peliculas.poster+"\"></a><br><center>"+salaComplejos.peliculas.titulo+"</center></li>";  
                   			});
                     			$('#PeliculasporComplejo').html(codigo); 
                 					codigo+="</ul>"; 

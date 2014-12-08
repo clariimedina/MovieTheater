@@ -257,6 +257,7 @@ header{
 	position: absolute;
 	padding-left: 3%;
 	width: 25%;
+	margin-top:50px;
 	background-color: white;
 }
 #horario-instruccion {
@@ -266,7 +267,7 @@ header{
 	width: 90%;
 	padding: 1% 1% 1% 4%;
 	border-radius: 5px;
-	margin-bottom: 28px;
+	margin-bottom: 50px;
 }
 #horario-instruccion span {
 	color: white;
@@ -283,9 +284,20 @@ header{
 }	
 .fecha-seleccion {
 	background-color:#0066Ad;
+	position: relative;
 	padding: 2% 1% 12% 3%;
 	border-radius: 5px;
-	width: 90%; 
+	width: 90%;  
+}
+.fecha-seleccion:after {
+	border-top: 8px solid #0066Ad;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	content: "";
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	margin-left: -8px;
 }
 .fecha-seleccion span{
 	color: white;
@@ -330,7 +342,7 @@ header{
 
 }
 .info-pelicula-contenedor {
-	margin:7% 10% 10% 10%;
+	margin:120px 50px 50px 150px;
 	background-color: #dad7d7;
 	position:relative;
 	display: inline-block;
