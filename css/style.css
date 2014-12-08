@@ -347,6 +347,7 @@ header{
 	position:relative;
 	display: inline-block;
 	width:60%;
+	height: 550px;
 }
 .info-pelicula-contenedor::before {
 	border-bottom: 12px solid #dad7d7;
@@ -391,13 +392,7 @@ header{
 .info-pelicula-enlaces-select{
 	border-bottom-color:#0066Ad!important;	
 }
-.info-pelicula-detalles-select {
-	display:block;
-}
-.info-pelicula-detalles {
-	display: none;;
 
-}
 /* PAGINA PARA COMPRAR BOLETOS´*/
 
 

@@ -16,6 +16,7 @@
 		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js" ></script>
 		<script type="text/javascript" src="js/funcionFancyBox.js"></script>
 		<script type="text/javascript" src="js/seleccionado.js"></script>
+		<script type="text/javascript" src="js/validaNumeros.js"></script>
 		
 
 	</head>

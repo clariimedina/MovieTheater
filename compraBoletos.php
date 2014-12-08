@@ -33,7 +33,7 @@
 					<span>Seleccione el numero de boletos</span>
 				</div>
 				<div class="compra-proceso-numBoletos">
-					<input type="number" value="1" max="50" min="1" placeholder="1" id="numBoletos" >
+					<input type="number" value="1" max="50" min="1" onkeypress="return justNumbers(event)" placeholder="1" id="numBoletos" >
 					<output name=“cociente” for="dividendo divisor">
 				</div>
 				<div class="compra-proceso-tipoProceso">
