@@ -98,7 +98,7 @@
 			$(document).ready(function() {
 				$('#header-button-cartelera').click(function() {
 					var ciudad = $('#ciudad option:selected').attr('value');
-					window.location.href = "http://localhost:8080/MovieTheater/cartelera.php?ciudad="+ciudad;
+					window.location.href = "http://localhost/MovieTheater/cartelera.php?ciudad="+ciudad;
 				});
 			});
 		</script>

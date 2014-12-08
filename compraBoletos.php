@@ -68,7 +68,7 @@ $(document).ready(function(){
 		$('#contenido').html(""); 
         //$("#contenido").css("display","none");
       	$.ajax({
-			url:"http://localhost:8080/cineBack/index.php/api/IniciaNuevaVenta?numBoletos="+numBoletos+"&horario="+horario+"&pelicula="+pelicula+"&numSala="+numSala+"&tipoSala="+tipoSala+"&tipoVenta="+tipoVenta,
+			url:"http://localhost/cineBack/index.php/api/IniciaNuevaVenta?numBoletos="+numBoletos+"&horario="+horario+"&pelicula="+pelicula+"&numSala="+numSala+"&tipoSala="+tipoSala+"&tipoVenta="+tipoVenta,
 			type:"GET",
 			dataType: "JSON",
 			success: function(response) {
