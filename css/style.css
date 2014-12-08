@@ -3,7 +3,7 @@ body {
 	width: 100%;
 }
 #main {	
-	margin: 115px 0 auto;
+	margin: 110px 0 auto;
 	position: relative;
 }
 /*HEADER*/
@@ -29,7 +29,9 @@ header{
 	height: 65px; 
 }
 .header-properties ul{
-	margin-left: 15%;
+	padding: 5px 0px 5px 0px;
+	margin-bottom: 0px !important;
+	text-align: center;
 }
 .header-properties select {
 	-webkit-appearance: menulist-button;
@@ -51,7 +53,14 @@ header{
 	font-size: 15px;
 	padding: 5px 0 5px 0px;
 	color: white;
+	-webkit-transition: All 1s;
 }
+
+.header-properties button:hover {
+	background-color: #5d5c5c;
+}
+
+
 .header-properties-button-user {
 	background-color:#5d5c5c;
 	padding: 10px 7px 13px 5px;
@@ -71,7 +80,12 @@ header{
 	padding-right: 12px;
 	font-size: 15px;
 	border-bottom-color:#0463a6;
+	-webkit-transition: All 1s;
 }
+#header-button-cartelera:hover {
+	background-color: #014D83;
+}
+
 #header-button-cartelera-letras {
 	padding-left: 10px;
 }
@@ -81,6 +95,10 @@ header{
 }
 #header-button-user {
 	padding-left:1%;
+}
+
+#ciudad:focus {
+	border:none!important;
 }
 /* MENU */
 .menu-properties{
@@ -92,16 +110,21 @@ header{
 	box-shadow: 0px 2px 25px 0px #343434
 }
 .menu-properties ul {
+	padding-left: 0px;
 	margin-left: 11%;
 }
 .menu-properties li {
 	display:inline-block;
-	margin: 0 1% 0 1%;
-	padding: 0 1% 0 1%;
+	padding: 0 2% 0 2%;
+	-webkit-transition: All 0.5s;
 }
 .menu-properties li a{
 	color: white;
-	font-size:0.9em;
+	font-size: medium;
+}
+
+.menu-properties li a:hover {
+	font-size: large;
 }
 
 .menu-properties li:hover{
@@ -114,7 +137,8 @@ header{
 /*FOOTER*/
 #footer {
 	background-color: #333;
-	height: 135px;
+	height: 35px;
+	font-size: smaller;
 }
 
 #footer-row {
@@ -144,6 +168,19 @@ header{
 	width: 100%;
 	height: 100%;
 	/*display: block;*/
+}
+
+#social-icons {
+	width: 28%;
+	display: inline-block;
+	text-align: right;
+	margin-top: 2px;
+}
+
+#copyright {
+	width: 60%;
+	display: inline-block;
+	text-align: right;
 }
 
 /*CARROUSEL */
@@ -369,6 +406,16 @@ header{
  	white-space: nowrap;
 
 }
+
+#lista li a {
+	-webkit-transition: All 0.5s;
+}
+
+#lista li a:hover {
+	color:#0066Ad;
+	font-size: medium;
+}
+
 .seleccion-hora a:hover {
 	color:#0066Ad;
 }
@@ -473,7 +520,7 @@ header{
 	display: inline-block; 
 	position: absolute;
 	margin-top: 80px;
-	width: 67%;
+	width: 75%;
 }
 .compra-proceso-instrucciones li {
 	 list-style: none;
@@ -483,7 +530,13 @@ header{
 	 padding: 4%;
 }
 
+.compra-proceso-instrucciones ul li strong{
+	font-size: medium;
+	color: #0066Ad;
+}
+
 .compra-proceso-seleccionBoletos {
+	padding-left: 40px;
 	margin-top: 50px;
 	color: #0066Ad;
 }
@@ -497,17 +550,24 @@ header{
 	border-radius:5px;
 	color: #343434;
 }
+
 .compra-proceso-numBoletos {
 	display: inline-block;
 }
+
+.compra-proceso-numBoletos output {
+	display: inline-block;
+	font-size: medium;
+}
+
 .compra-proceso-numBoletos input {
+	display: inline-block;
 	background-color:#168cdf;
 	color: white;
 	border:none;
 	border-radius: 5px;
 	font-weight:bold;
 	height: 40px;
-
 }
 .compra-proceso-tipoProceso {
 	margin-top: 80px;
@@ -516,7 +576,7 @@ header{
 
 /*Asientos*/
 #seating-container {
-    width: 1000px;
+    width: 900px;
 	height: 100%;
 	padding-bottom: 10px;
 	background-color: #F0F0F0;
@@ -551,7 +611,7 @@ header{
 }
 
 #button-sig-container {
-    width: 1000px;
+    width: 900px;
     height: 70px;
     text-align: right;
     padding: 2% 2% 0% 0%;

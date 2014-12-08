@@ -15,7 +15,6 @@
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js" ></script>
 		<script type="text/javascript" src="js/funcionFancyBox.js"></script>
-		<script type="text/javascript" src="js/seleccionado.js"></script>
 		<script type="text/javascript" src="js/validaNumeros.js"></script>
 		
 	</head>
@@ -98,7 +97,7 @@
 			$(document).ready(function() {
 				$('#header-button-cartelera').click(function() {
 					var ciudad = $('#ciudad option:selected').attr('value');
-					window.location.href = "http://localhost:8080/MovieTheater/cartelera.php?ciudad="+ciudad;
+					window.location.href = "http://localhost:/MovieTheater/cartelera.php?ciudad="+ciudad;
 				});
 			});
 		</script>
