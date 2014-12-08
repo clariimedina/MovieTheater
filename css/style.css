@@ -835,3 +835,98 @@ header{
 	margin-top: 15%;
 }
 
+
+imagen-contenido-buzon img {
+	margin-top: 35%;
+	width: 90% !important;
+	margin-left: 5%;
+}
+
+
+.seguridad-buzon p{
+	font-size: 8pt;
+	padding-left: 70%;
+	margin-right: 5%;
+	padding-top: 28%;
+
+}
+
+.titulo-buzon h3{
+	color: #0066Ad;
+	margin-left: 5%;
+	margin-top: 13%;
+
+}
+.texto-buzon {
+	margin-left: 10%
+
+}
+
+#header-button-enviar {
+	background-color:#0066ad;
+	color: white;
+	margin-left: 15px;
+	padding-right: 12px;
+	font-size: 15px;
+	border-bottom-color:#0463a6;
+}
+#header-button-enviar-letras {
+	padding-left: 10px;
+}
+
+.margen-boton-enviar{
+	padding-top: 5%;
+	padding-left:80%;
+	padding-bottom: 20%
+}
+
+.margen-formularios{
+	padding-left: 5%;
+}
+.margen-formularios2{
+	padding-top: 7%;
+	padding-left: 3%;
+}
+.imagenNosotros img {
+	height:10% !important;
+	width: 100%;
+}
+
+.nosotros-titulo h3{
+	margin-top: 5%;
+	margin-left:5%;
+	color: #0066Ad;
+}
+.imagen-info-nosotros img {
+	width:80%;
+	height:70%;
+	display: line-block !important;
+	margin-left: 5%;
+	padding-top: 5%;
+}
+.nosotros-info-text{
+	display: line-block !important;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+.separacion {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: gray;
+	width: 95%;
+	margin-left:3%;
+	background color: blue !important;
+}
+.pelicula-contendor-reserva {
+	margin-top: 5%;
+	margin-left: 15%;
+	width:65%;
+	display: inline-block;
+}
+
+.botones-detalle-reserva{
+
+	margin-left: 60%;	
+	display: inline-block;
+
+}

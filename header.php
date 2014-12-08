@@ -58,8 +58,8 @@
 					<li><a href="3d.php">3D</a></li>
 					<li><a href="moviextremo.php">MovieXtremo</a></li>
 					<li><a href="invitadoespecial.php">Invitado Especial</a></li>
-					<li><a href="buzontheater.php">Buzón Theater</a></li>
-					<li><a href="">Nosotros</a></li>
+					<li><a href="buzon.php">Buzón Theater</a></li>
+					<li><a href="nosotros.php">Nosotros</a></li>
 				</ul>
 			</div>
 		</header>
@@ -97,7 +97,7 @@
 			$(document).ready(function() {
 				$('#header-button-cartelera').click(function() {
 					var ciudad = $('#ciudad option:selected').attr('value');
-					window.location.href = "http://localhost:/MovieTheater/cartelera.php?ciudad="+ciudad;
+					window.location.href = "http://localhost/MovieTheater/cartelera.php?ciudad="+ciudad;
 				});
 			});
 		</script>

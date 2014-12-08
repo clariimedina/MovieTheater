@@ -10,7 +10,7 @@
 $(document).ready(function(response) {
 	var c = getParameterByName('ciudad');
     $.ajax({
-            url: "http://localhost:/cineBack/index.php/api/Ciudad?ciudad="+c, // URL del recurso
+            url: "http://localhost/cineBack/index.php/api/Ciudad?ciudad="+c, // URL del recurso
             type: "GET",         
             dataType: "json",
             success: function(response) {
